@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,6 +17,15 @@ Route::middleware('auth')->group(function () {
    Route::get('/transaksi/export', \App\Livewire\Transaksi\Export::class)->name('transaksi.export');
    Route::get('/transaksi/{transaksi}/edit', \App\Livewire\Transaksi\Actions::class)->name('transaksi.edit');
    Route::get('/transaksi/{transaksi}/cetak', \App\Livewire\Transaksi\Cetak::class)->name('transaksi.cetak');
+
+   Route::get('/run-storage-link', function () {
+      try {
+         Artisan::call('storage:link');
+         return response()->json(['message' => 'Storage linked successfully!']);
+      } catch (\Exception $e) {
+         return response()->json(['error' => $e->getMessage()], 500);
+      }
+   });
 });
 
 Route::middleware('guest')->group(function () {
