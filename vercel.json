@@ -5,10 +5,12 @@
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
     "routes": [
-        { "src": "/(.*)", "dest": "/public/" },
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/img/(.*)", "dest": "/public/img/" },
         { "src": "/storage/(.*)", "dest": "/public/storage/" },
+        { "src": "/sw.js", "dest": "/public/sw.js" },
+        { "src": "/manifest.json", "dest": "/public/manifest.json" },
+        { "src": "/offline.html", "dest": "/public/offline.html" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
