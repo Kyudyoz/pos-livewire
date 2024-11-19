@@ -1,6 +1,6 @@
 {
     "name": "POS Kafe",
-    "short_name": "PK",
+    "short_name": "POS Kafe",
     "start_url": "/index.php",
     "background_color": "#6777ef",
     "description": "Aplikasi Kasir Pawon3D",

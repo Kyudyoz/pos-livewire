@@ -1,4 +1,4 @@
-<ul class="menu text-base-content min-h-full w-80 p-4 border-r-2 border-base-300 space-y-4">
+<ul class="menu bg-base-300 text-base-content min-h-full w-80 p-4 border-r-2 border-base-300 space-y-4">
     <li>
         <h2 class="menu-title">Dashboard</h2>
         <ul>
