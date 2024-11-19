@@ -1,6 +1,6 @@
 <div class="page-wrapper">
-    <div class="grid grid-cols-2 gap-6">
-        <div class="card card-divide h-fit">
+    <div class="grid lg:grid-cols-2 gap-6">
+        <div class="card card-divide h-fit mr-10 lg:mr-0">
             <div class="card-body">
                 <input type="search" class="input input-bordered" placeholder="Search" wire:model.live="search">
             </div>
@@ -10,7 +10,7 @@
     }) as $type => $menu)
                 <div class="card-body">
                     <h3 class="card-title">{{ $type }}</h3>
-                    <div class="grid grid-cols-3 gap-2">
+                    <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-2">
                         @foreach ($menu as $item)
                             <button class="avatar" wire:click="addItem({{ $item->id }})">
                                 <div class="w-full rounded-lg relative">
@@ -30,7 +30,7 @@
                 </div>
             @endforeach
         </div>
-        <div class="card h-fit">
+        <div class="card h-fit mr-10 lg:mr-0">
             <form class="card-body space-y-4" wire:submit="simpan">
                 <h3 class="card-title">Detail Transaksi</h3>
                 <div @class(['table-wrapper', 'border-error' => $errors->first('items')])>

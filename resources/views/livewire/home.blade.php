@@ -4,7 +4,7 @@
             <div class="card-body flex-row items-center gap-3">
                 <div class="avatar placeholder">
                     <div class="w-12 bg-warning rounded-full">
-                        <x-tabler-calendar-month class="size-6 text-base-300" />
+                        <x-tabler-calendar-month class="size-6 " />
                     </div>
                 </div>
                 <div class="flex flex-col">
@@ -17,7 +17,7 @@
             <div class="card-body flex-row items-center gap-3">
                 <div class="avatar placeholder">
                     <div class="w-12 bg-warning rounded-full">
-                        <x-tabler-calendar-check class="size-6 text-base-300" />
+                        <x-tabler-calendar-check class="size-6 " />
                     </div>
                 </div>
                 <div class="flex flex-col">
@@ -30,7 +30,7 @@
             <div class="card-body flex-row items-center gap-3">
                 <div class="avatar placeholder">
                     <div class="w-12 bg-warning rounded-full">
-                        <x-tabler-list-check class="size-6 text-base-300" />
+                        <x-tabler-list-check class="size-6 " />
                     </div>
                 </div>
                 <div class="flex flex-col">

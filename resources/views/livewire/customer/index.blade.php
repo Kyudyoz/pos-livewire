@@ -3,7 +3,7 @@
         <input type="search" class="input input-bordered" placeholder="Search" wire:model.live="search">
         <button class="btn btn-primary" wire:click="$dispatch('createCustomer')">
             <x-tabler-plus class="size-5" />
-            <span>Tambah customer</span>
+            <span class="hidden md:block">Tambah customer</span>
         </button>
     </div>
     <div class="table-wrapper">

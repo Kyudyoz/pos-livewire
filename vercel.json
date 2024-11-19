@@ -11,7 +11,7 @@
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "public": true,
-    "buildCommand": "vite build",
+    "buildCommand": ["vite build", "composer install"],
     "outputDirectory": "public",
     "env": {
         "APP_NAME": "Pos Kafe",

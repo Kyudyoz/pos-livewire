@@ -1,0 +1,17 @@
+{
+    "name": "Pos Kafe",
+    "short_name": "PK",
+    "start_url": "/index.php",
+    "background_color": "#6777ef",
+    "description": "Aplikasi Kasir Pawon3D",
+    "display": "fullscreen",
+    "theme_color": "#6777ef",
+    "icons": [
+        {
+            "src": "/img/bakery-shop512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
