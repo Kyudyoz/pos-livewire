@@ -35,11 +35,8 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-        "DB_CONNECTION": "mysql",
-        "DB_HOST": "9kohg.h.filess.io",
-        "DB_PORT": "3305",
-        "DB_DATABASE": "poskafe_shelterpen",
-        "DB_USERNAME": "poskafe_shelterpen",
-        "DB_PASSWORD": "4522d91b057e4787fa765c3e407dced526f4d897"
+        "DB_CONNECTION": "pgsql",
+        "DB_HOST": "postgresql://postgres.shuzytlkjilarzisystp:RtX7MNfJGbamqU9m@aws-0-us-west-1.pooler.supabase.com:5432/postgres",
+        "DB_PASSWORD" : "RtX7MNfJGbamqU9m"
     }
 }
