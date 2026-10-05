@@ -2,16 +2,39 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
     },
     "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/" },
-        { "src": "/img/(.*)", "dest": "/public/img/" },
-        { "src": "/storage/(.*)", "dest": "/public/storage/" },
-        { "src": "/sw.js", "dest": "/public/sw.js" },
-        { "src": "/manifest.json", "dest": "/public/manifest.json" },
-        { "src": "/offline.html", "dest": "/public/offline.html" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/"
+        },
+        {
+            "src": "/img/(.*)",
+            "dest": "/public/img/"
+        },
+        {
+            "src": "/storage/(.*)",
+            "dest": "/public/storage/"
+        },
+        {
+            "src": "/sw.js",
+            "dest": "/public/sw.js"
+        },
+        {
+            "src": "/manifest.json",
+            "dest": "/public/manifest.json"
+        },
+        {
+            "src": "/offline.html",
+            "dest": "/public/offline.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
     ],
     "public": true,
     "buildCommand": "vite build",
@@ -22,9 +45,9 @@
         "APP_DEBUG": "false",
         "APP_URL": "https://poskafe-muhammad-iqbal-firdaus-projects.vercel.app/",
         "APP_KEY": "base64:TGaVaXwhWgjn9akhE4SCSIjGG/cQqvICUQ+PgLA3Bs0=",
-        "APP_TIMEZONE":"Asia/Jakarta",
-        "APP_LOCALE":"id",
-        "APP_FALLBACK_LOCALE":"id",
+        "APP_TIMEZONE": "Asia/Jakarta",
+        "APP_LOCALE": "id",
+        "APP_FALLBACK_LOCALE": "id",
         "FILESYSTEM_DISK": "public",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
@@ -36,7 +59,7 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "DB_CONNECTION": "pgsql",
-        "DB_HOST": "postgresql://postgres.shuzytlkjilarzisystp:RtX7MNfJGbamqU9m@aws-0-us-west-1.pooler.supabase.com:5432/postgres",
-        "DB_PASSWORD" : "RtX7MNfJGbamqU9m"
+        "DB_HOST": "postgresql://postgres:jelekbanget1@db.ymhvmdvgzfbcrvuqcfqx.supabase.co:5432/postgres",
+        "DB_PASSWORD": "jelekbanget1"
     }
 }
