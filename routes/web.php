@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/health', function () {
+    return response()->json([
+        'status' => 'ok',
+    ]);
+});
 Route::get('/', function () {
    return redirect()->route('login');
 });
