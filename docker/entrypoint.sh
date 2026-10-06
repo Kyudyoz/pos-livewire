@@ -31,10 +31,6 @@ php artisan config:cache || true
 php artisan route:cache || true
 php artisan view:cache || true
 
-#build frontend
-npm install --silent || true
-npm run build --silent || true
-
 # Ensure permissions AFTER all artisan commands run
 chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache
